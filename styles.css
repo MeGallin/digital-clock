@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('grunge-paint-background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  text-transform: uppercase;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.clock-wrapper {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+#hours,
+#minutes,
+#seconds,
+#am-pm {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.8;
+  font-size: 4rem;
+  margin: 0 0.2em;
+  padding: 0 0.2em;
+  width: 100px;
+}
+
+.hours,
+.minutes,
+.seconds,
+span :nth-child(4) {
+  background-color: white;
+  font-size: 1.2rem;
+  margin: 0 0.2em;
+  padding: 0 0.2em;
+  width: 100px;
+  letter-spacing: 4px;
+}
